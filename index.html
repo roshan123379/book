@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +20,15 @@
   </div>
 
   <div class="content">
+    <div class="phone-container">
+      <div class="phone-icon animated">&#x1F4DE;</div>
+  </div>
+  
+   <div class="whatsapp-container">
+    <div class="whatsapp-icon animated"><img src="https://www.kindpng.com/picc/m/19-195256_whatsapp-icon-whatsapp-logo-jpg-download-hd-png.png" alt="WhatsApp Icon">
+    </div>
+</div>
+
     <div class="container">
       <div class="slider">
         <img class="poster" src="./imgs/poster.jpeg" alt="">
@@ -70,104 +80,142 @@
         <div class="box1">
           
           <img src="./imgs/photo1.jpg" alt="">
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon1.png" alt="">
+          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm;  display: flex; justify-content: space-between;"><img src="./imgs/icon1.png" alt="">
             <img src="./imgs/icon2.png" alt=""><img src="./imgs/icon3.png" alt=""></div>
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>10 P</span><span style="margin-left: 0.9cm;">6 Bed..</span><span style="margin-left: 0.8cm;">6 Bath..</span></div>  
+          <div style="width: 100%; height: 1cm; box-shadow: none; top:-0.2cm; display: flex; justify-content: space-evenly; text-align: center;"><span>10 Person</span><span style="margin-left: 0.9cm;">6 Bedroom</span><span style="margin-left: 0.8cm;">6 Bathroom</span></div>  
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon5.png" alt="">
               <img src="./imgs/icon6.png" alt=""><img src="./imgs/icon7.png" alt=""></div>  
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>Aircondition</span><span style="margin-left: -0.6cm;">Parking</span><span">Washer</span></div>     
+          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm;  display: flex; margin-left: 0.5cm; justify-content: space-between; text-align:center ;"><span>Aircondition</span><span style="margin-left: 0cm;">Parking</span><span style="margin-left: 0.9cm;">Washer</span></div>     
           <p>Moscow Gold Villas</p>
           <p style="color: black; font-size: 18px;">Igatpuri</p>
-          <button>Get Price</button>
+          <button class="get" onclick="togglePopup()">Get Price</button>
         </div>
         <div class="box2">
           <img src="./imgs/photo2.jpg" alt="">
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon1.png" alt="">
             <img src="./imgs/icon2.png" alt=""><img src="./imgs/icon3.png" alt=""></div>
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>10 P</span><span style="margin-left: 0.9cm;">7 Bed..</span><span style="margin-left: 0.8cm;">7 Bath..</span></div>  
+          <div style="width: 100%; height: 1cm; box-shadow: none; top:-0.2cm; display: flex; justify-content: space-evenly; text-align: center;"><span>10 Person</span><span style="margin-left: 0.9cm;">7 Bedroom</span><span style="margin-left: 0.8cm;">7 Bathroom</span></div>  
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon5.png" alt="">
               <img src="./imgs/icon6.png" alt=""><img src="./imgs/icon7.png" alt=""></div>  
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>Aircondition</span><span style="margin-left: -0.6cm;">Parking</span><span">Washer</span></div>    
+          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm;  display: flex; margin-left: 0.5cm; justify-content: space-between; text-align:center ;"><span>Aircondition</span><span >Parking</span><span style="margin-left: 0.9cm;">Washer</span></div>    
           <p>Sky Armani Villas</p>
           <p style="color: black; font-size: 18px;">Igatpuri</p>
-          <button>Get Price</button>
+          <button class="get" onclick="togglePopup()">Get Price</button>
         </div>
         <div class="box3">
           <img src="./imgs/photo3.jpg" alt="">
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon1.png" alt="">
             <img src="./imgs/icon2.png" alt=""><img src="./imgs/icon3.png" alt=""></div>
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>10 P</span><span style="margin-left: 0.9cm;">6 Bed..</span><span style="margin-left: 0.8cm;">6 Bath..</span></div>  
+          <div style="width: 100%; height: 1cm; box-shadow: none; top:-0.2cm; display: flex; justify-content: space-evenly;text-align: center;"><span>10 Person</span><span style="margin-left: 0.9cm;">6 Bedroom</span><span style="margin-left: 0.8cm;">6 Bathroom</span></div>  
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon5.png" alt="">
               <img src="./imgs/icon6.png" alt=""><img src="./imgs/icon7.png" alt=""></div>  
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>Aircondition</span><span style="margin-left: -0.6cm;">Parking</span><span">Washer</span></div>    
+          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm;  display: flex; margin-left: 0.5cm; justify-content: space-between;  text-align:center ;"><span>Aircondition</span><span >Parking</span><span style="margin-left: 0.9cm;">Washer</span></div>    
           <p>Sky Mansionz Villas</p>
           <p style="color: black; font-size: 18px;">Igatpuri</p>
-          <button>Get Price</button>
+          <button class="get" onclick="togglePopup()">Get Price</button>
           
         </div>
         <div class="box4">
           <img src="./imgs/photo4.jpg" alt="">
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon1.png" alt="">
             <img src="./imgs/icon2.png" alt=""><img src="./imgs/icon3.png" alt=""></div>
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>10 P</span><span style="margin-left: 0.9cm;">5 Bed..</span><span style="margin-left: 0.8cm;">5 Bath..</span></div>  
+          <div style="width: 100%; height: 1cm; box-shadow: none; top:-0.2cm;  display: flex; justify-content: space-evenly;text-align: center;"><span>10 Person</span><span style="margin-left: 0.9cm;">5 Bedroom</span><span style="margin-left: 0.8cm;">5 Bathroom</span></div>  
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon5.png" alt="">
               <img src="./imgs/icon6.png" alt=""><img src="./imgs/icon7.png" alt=""></div>  
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>Aircondition</span><span style="margin-left: -0.6cm;">Parking</span><span">Washer</span></div>  
+          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm;  display: flex; margin-left: 0.5cm; justify-content: space-between;  text-align:center ;"><span>Aircondition</span><span >Parking</span><span style="margin-left: 0.9cm;">Washer</span></div>  
           <p>Sky Taj Villas</p>
-          <p style="color: black; font-size: 18px;">Igatpuri</p>
-          <button>Get Price</button>
+          <p style="color: #000000; font-size: 18px;">Igatpuri</p>
+          <button class="get" onclick="togglePopup()">Get Price</button>
         </div>
         <div class="box5">
           <img src="./imgs/photo5.jpg" alt="">
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon1.png" alt="">
             <img src="./imgs/icon2.png" alt=""><img src="./imgs/icon3.png" alt=""></div>
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>10 P</span><span style="margin-left: 0.9cm;">5 Bed..</span><span style="margin-left: 0.8cm;">6 Bath..</span></div>  
+          <div style="width: 100%; height: 1cm; box-shadow: none; top:-0.2cm; display: flex; justify-content: space-evenly;text-align: center;"><span>10 Person</span><span style="margin-left: 0.9cm;">5 Bedroom</span><span style="margin-left: 0.8cm;">6 Bathroom</span></div>  
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon5.png" alt="">
               <img src="./imgs/icon6.png" alt=""><img src="./imgs/icon7.png" alt=""></div>  
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>Aircondition</span><span style="margin-left: -0.6cm;">Parking</span><span">Washer</span></div> 
+          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; display: flex; margin-left: 0.5cm; justify-content: space-between;  text-align:center ;"><span>Aircondition</span><span >Parking</span><span style="margin-left: 0.9cm;">Washer</span></div> 
           <p>Sky Lagoon Villas</p>
           <p style="color: black; font-size: 18px;">Igatpuri</p>
-          <button>Get Price</button>
+          <button class="get" onclick="togglePopup()">Get Price</button>
         </div>
         <div class="box6">
           <img src="./imgs/photo6.jpg" alt="">
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon1.png" alt="">
             <img src="./imgs/icon2.png" alt=""><img src="./imgs/icon3.png" alt=""></div>
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>10 P</span><span style="margin-left: 0.9cm;">5 Bed..</span><span style="margin-left: 0.8cm;">5 Bath..</span></div>  
+          <div style="width: 100%; height: 1cm; box-shadow: none; top:-0.2cm; display: flex; justify-content: space-evenly;text-align: center;"><span>10 Person</span><span style="margin-left: 0.9cm;">5 Bedroom</span><span style="margin-left: 0.8cm;">5 Bathroom</span></div>  
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon5.png" alt="">
               <img src="./imgs/icon6.png" alt=""><img src="./imgs/icon7.png" alt=""></div>  
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>Aircondition</span><span style="margin-left: -0.6cm;">Parking</span><span">Washer</span></div> 
+          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm;  display: flex; margin-left: 0.5cm; justify-content: space-between;  text-align:center ;"><span>Aircondition</span><span >Parking</span><span style="margin-left: 0.9cm;">Washer</span></div> 
           <p>Sky Club Villas</p>
           <p style="color: black; font-size: 18px;">Igatpuri</p>
-          <button>Get Price</button>
+          <button class="get" onclick="togglePopup()">Get Price</button>
         </div>
         <div class="box7">
           <img src="./imgs/photo7.jpg" alt="">
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon1.png" alt="">
             <img src="./imgs/icon2.png" alt=""><img src="./imgs/icon3.png" alt=""></div>
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>10 P</span><span style="margin-left: 0.9cm;">5 Bed..</span><span style="margin-left: 0.8cm;">5 Bath..</span></div>  
+          <div style="width: 100%; height: 1cm; box-shadow: none; top:-0.2cm;  display: flex; justify-content: space-evenly;text-align: center;"><span>10 Person</span><span style="margin-left: 0.9cm;">5 Bedroom</span><span style="margin-left: 0.8cm;">5 Bathroom</span></div>  
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon5.png" alt="">
               <img src="./imgs/icon6.png" alt=""><img src="./imgs/icon7.png" alt=""></div>  
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>Aircondition</span><span style="margin-left: -0.6cm;">Parking</span><span">Washer</span></div>
+          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; display: flex; margin-left: 0.5cm; justify-content: space-between; text-align:center ;"><span>Aircondition</span><span >Parking</span><span style="margin-left: 0.9cm;">Washer</span></div>
           <p>Sky Water Villas</p>
           <p style="color: black; font-size: 18px;">Igatpuri</p>
-          <button>Get Price</button>
+          <button class="get" onclick="togglePopup()">Get Price</button>
         </div>
         <div class="box8">
           <img src="./imgs/photo8.jpg" alt="">
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon1.png" alt="">
             <img src="./imgs/icon2.png" alt=""><img src="./imgs/icon3.png" alt=""></div>
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>8 P</span><span style="margin-left: 0.9cm;">3 Bed..</span><span style="margin-left: 0.8cm;">3 Bath..</span></div>  
+          <div style="width: 100%; height: 1cm; box-shadow: none; top:-0.2cm; display: flex; justify-content: space-evenly;text-align: center;"><span>8 P</span><span style="margin-left: 0.9cm;">3 Bedroom</span><span style="margin-left: 0.8cm;">3 Bathroom</span></div>  
           <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><img src="./imgs/icon5.png" alt="">
               <img src="./imgs/icon6.png" alt=""><img src="./imgs/icon7.png" alt=""></div>  
-          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; margin-left: 0.5cm; display: flex; justify-content: space-between;"><span>Aircondition</span><span style="margin-left: -0.6cm;">Parking</span><span">Washer</span></div>  
+          <div style="width: 85%; height: 1cm; box-shadow: none; top:-0.2cm; display: flex; margin-left: 0.5cm; justify-content: space-between;  text-align:center ;"><span>Aircondition</span><span >Parking</span><span style="margin-left: 0.9cm;">Washer</span></div>  
           <p>Sky Cabana Villas</p>
           <p style="color: black; font-size: 18px;">Igatpuri</p>
-          <button>Get Price</button>
+          <button class="get" onclick="togglePopup()">Get Price</button>
         </div>
+        
       </div>
+      <div class="overlay" id="overlay">
+        <div class="popup-container">
+           <div  class="head">
+            <div></div>
+            <h2>Details Form</h2>
+            <div class="close"><img src="https://4.bp.blogspot.com/-_hPtN6OSUlI/UofVgda6szI/AAAAAAAAGSM/hx7TmrmEc98/s1600/1-01.jpg" alt=""></div>
+           </div>
+            <form action="#" method="post" id="popForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+      
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required
+                     title="Please enter a 10-digit phone number">
+      
+              <label for="question">Time</label>
+              <input type="date" name="" id="">
+      
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+      
+              <button type="submit">Submit</button>
+            </form>
+            
+        </div>
     </div>
-  </div>
+    
+    
+    </div>
+    
+  </div> 
+
+  <!-- <div class="reels">
+    <div><video src="./vdo/video.mp4" controls=""></video> </div>
+    <div><video src="./vdo/video.mp4" controls=""></video> </div>
+    <div><video src="./vdo/video.mp4" controls=""></video> </div>
+    <div><video src="./vdo/video.mp4" controls=""></video> </div>
+  </div> -->
+
 
   <div class="content3" style="margin-top: 0.5cm;">
     <div class="title">
@@ -182,9 +230,9 @@
      <div class="img4"><img src="./imgs/hover4.jpg" alt=""></div>
     </div>
     
-  </div>
+  </div> 
 
-  <div class="content4" style="margin-top: 0.5cm; ; ">
+   <div class="content4" style="margin-top: 0.5cm; ; ">
     <div class="title" style="height: 3cm; padding-top: 1cm;">
       <h1><span>IGATPURI</span> VILLAS</h1>
     </div>
@@ -212,16 +260,16 @@
       <div style="width: max(7cm,30%);"><p>VILLAS ON RENT IGATPURI</p></div>
       <div style="width: max(7cm,30%);"><p>HOLIDAY HOMES IN IGATPURI</p></div>
     </div>
-  </div>
+  </div> 
 
-  <div class="content5">
+    <div class="content5">
     <div>
       <img src="./imgs/last1.jpg" alt="">
       <h1><span style="color: goldenrod;">ABOUT  </span>US</h1>
 
     </div>
 
-  </div>
+ </div>
   <div class="content6">
     <div><img src="./imgs/about.jpg" alt=""></div>
     <div class="div2"><h1>About Sky Water Villas</h1>
@@ -236,7 +284,7 @@
       Choose range of Holiday Homes For Weekend in Igatpuri, Discover the <br>
       best homestay with 2BHK, 3BHK, 4BHK and 5BHK Villas.</p></div>
   </div>
-  
+   
   <script src="script.js"></script>
 </body>
 

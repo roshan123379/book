@@ -20,3 +20,20 @@ function controll(n){
 flag = flag + n
 slideShow(flag)
 } 
+
+function togglePopup() {
+   const overlay = document.getElementById('overlay');
+   overlay.style.display = overlay.style.display === 'none' ? 'flex' : 'none';
+}
+
+document.getElementById("popForm").addEventListener("submit", function (event) {
+   event.preventDefault();
+   // Add your form submission logic here
+
+   // After submission, close the pop-up
+   togglePopup();
+});
+let close=document.querySelector(".close")
+close.addEventListener("click" ,()=>{
+   overlay.style.display="none"
+})
