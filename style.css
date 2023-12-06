@@ -1,505 +1,586 @@
 *{
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body{
-  
-  max-width: 100%;
-  overflow-x: hidden;
+ 
+ max-width: 100%;
+ overflow-x: hidden;
 }
 .header{
-   width: 100%;
-   height: 3cm;
-   background-color:rgb(24, 41, 100);
-   position: fixed;
-   top: 0;
-   display: flex;
-   z-index: 1;
-   justify-content: space-between;
-   align-items: center;
+  width: 100%;
+  height: 3cm;
+  background-color:rgb(24, 41, 100);
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-   
+  
 }
 
 .imgDiv img{
-   height: 3cm;
-   margin-left: 2cm;
+  height: 3cm;
+  
 }
 .content{
-  width: 100%;
- 
-}
-.container{
-  width: 100%;
-}
-.content img{
-   width: 100%;
-   height: 100vh;
-  
-   
-}
-.container img{
-   width: 100%;
-   height: 100vh;
-}
-.arrow1,.arrow2{
-   position: relative;
-   top: -3cm;
-   
-   padding: 14px 19px;
-   background-color: rgba(255, 255, 255, 0.736);
-   border-radius: 50%;
-}
-.arrow1{
-   left: 44%;
+ width: 100%;
 
 }
-.arrow2{
-  left: 49%;
+.containe{
+ position: relative;
+ width: 100%;
+ 
 }
+.content img{
+  width: 100%;
+  height: 100vh;
+ 
+  
+}
+.containe img{
+  width: 100%;
+  height: 100vh;
+}
+.control{
+ display: flex;
+ justify-content: center;
+ gap: 1cm;
+ width: 100%;
+  position: absolute;
+ top: 80%;
+ 
+ 
+  
+  
+ 
+  
+}
+.arrow1,.arrow2{
+ background-color: rgba(255, 255, 255, 0.51);
+padding: 12px 9px 0px 7px ;
+
+ width: 0.9cm;
+ height: 0.9cm;
+ border-radius: 50%;
+ text-align: center;
+}
+
 .caption{
-   width: 100%;
-   position: absolute;
-   
-   
-   font-size: 20px;
-   
-   
-   text-align: center;
-   padding-top: 0.2cm;
-   top: 4cm;
-   
+  width: 100%;
+  position: absolute;
+  
+  
+  font-size: 20px;
+  
+  
+  text-align: center;
+  padding-top: 0.2cm;
+  top: 4cm;
+  
 }
 
 .slider{
-   display: none;
-   
-   
+
+  display: none;
+  
+  
 }
 .poster{
-  filter: blur(3px);
-  
+ filter: blur(3px);
+ 
 }
 
 .caption img{
-   width: 0.6cm;
-   height: 0.6cm;
-   
-   
+  width: 0.6cm;
+  height: 0.6cm;
+  
+  
 }
 
 .caption p, h1{
-   margin-bottom: 0.6cm;
+  margin-bottom: 0.6cm;
 }
 .caption button{
-   width: 3cm;
-   height: 1cm;
-   font-size: 18px;
-   background-color: white;
-   border: none;
+  width: 3cm;
+  height: 1cm;
+  font-size: 18px;
+  background-color: white;
+  border: none;
 
 }
 .title span{
-   color: goldenrod;
+  color:rgb(153,101,21);
 }
 .title{
-   text-align: center;
-   height: 4cm;
+ margin-top: 1cm;
+  text-align: center;
+  height: 4cm;
 }
 .title p{
-  font-size: 18px;
+ font-size: 18px;
 }
+
+
 .cards{
-  border: 1px solid black;
-  width: 100%;
-  height: auto;
-  background-color:rgb(24, 41, 100);
+ 
+ width: 100%;
+ height: auto;
+ background-color:rgb(24, 41, 100);
+ 
 }
 .items{
-display: flex;
-flex-wrap: wrap;
-gap: 1cm;
-justify-content: center;
-width: 100%;
-}
-.items div{
-  box-shadow: 1px 1px 3px gray;
-  height:15cm;
-  
-  width: max(7.7cm,25%);
-  position: relative;
-  background-color: white;
-  top: -1cm;
-}
-.items div img{
-  width: 100%;
-  height: 45%;
-  margin-bottom: 0.5cm;
-}
-.items div p{
-  font-size: 28px;
-  color: goldenrod;
-  margin: 0cm 0.5cm 0 0.5cm;
-}
-.items div button{
-  width: 2.5cm;
-  height: 1cm;
-  background-color: rgb(24, 41, 100);
-  color: white;
-  border: none;
-  font-size: 16px;
-  margin: 0.5cm;
-}
-.box2{
-  
-  top: -1cm;
-  left: 0.15%;
-}
-.items div div img{
-  width: 0.7cm;
-  height: 0.7cm;
-}
-.icons{
-  width: 1cm; 
-  height: 1cm;
-   box-shadow: none;
-}
-.box3{
-  top: -1cm;
-  left: 0.30%;
-}
-
-.hoverImg{
-display: flex;
-
-}
-
-.hoverImg div{
  
-  width: 25%;
-  height: 9cm;
-  flex: 1;
-}
-.hoverImg div:hover{
-flex-grow: 2;
-
-}
-.hoverImg div img{
-  width: 100%;
-  height: 100%;
-}
-.img1,.img2,.img3,.img4{
-filter: blur(3px);
-}
-.img1:hover,.img2:hover,.img3:hover,.img4:hover{
-  filter: blur(0);
-}
-.subBox1,.subBox2{
  display: flex;
  flex-wrap: wrap;
- margin: 5% 7%;
+ gap: 1cm;
+ 
+ justify-content: center;
+ width: 100%;
 }
-.subBox1 div,.subBox2 div{
-  margin-right: 1cm;
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+ width: max(9cm,30%);
+ position: relative;
+ top:-1cm;
+ 
+ background-color: white;
+
+}
+.details{
+ 
+ display: flex;
+ justify-content: space-evenly;
+ 
+}
+.itemsImg{
+ width: 100%;
+}
+.column1{
+ width: 100%;
+
+}
+.column1 div{
+ 
+
+ margin: 0.2cm 0;
+ text-align: center;
+}
+.moscow{
+ color: rgb(153,101,21);
+ font-size:  30px;
+ margin:0 0.3cm;
+ padding-top: 0.2cm;
+ border-top: 1px solid gray;
+ 
+}
+.igat{
+ margin-left: 0.3cm;
+ font-size: 18px;
+}
+.box1 button,.box2 button,.box3 button,.box4 button,.box5 button,.box6 button,.box7 button,.box8 button{
+ width: 2.5cm;
+ font-size: 18px;
+ color: white;
+ height: 1cm;
+ background-color: rgb(24, 41, 100);
+ border: none;
+ margin: 0.2cm;
+ border-radius: 5px;
+
 }
 
-.boxes div div{
-  
-  width: 30%;
-  height: 10cm;
-}
-.subBox2 div{
-  flex-grow: 1;
-}
-.subBox1 div img,.subBox2 div img{
-  width: max(8cm , 100%);
-  height: 100%;
-  
-}
-.sub1,.sub2{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5% 7%;
-}
-.sub1 div,.sub2 div{
-  width: max(7cm,100%);
-   margin-right: 1cm;
+
+
+
+.items div div img{
+ width: 0.7cm;
+ height: 0.7cm;
 }
 
-.boxes2 div div{
-   
-   width: 30%;
-  
-   height: 10cm;
+
+.hover{
+ margin-bottom: 2cm;
 }
 
-.sub2 div{
-   flex-grow: 1;
+
+
+.part1,.part3,.part2,.part4{
+ display: flex;
+ flex-wrap: wrap;
+ height: 8cm;
+ width: 100%;
+ height: auto;
+ justify-content: space-evenly;
+ 
+
 }
-.sub1 div img,.sub2 div img{
-   width: max(8cm,100%);
-   height: 100%;
-   
+.part1 div{
+ height: 8cm;
+margin-bottom: 0.2cm; 
+ width: max(9cm,45%);
+ 
 }
-.boxes2{
-  
-  position: relative;
-  top: -24cm;
+.part2 div{
+ height: 8cm;
+margin-bottom: 0.2cm; 
+ width: max(9cm,30%);
+ 
+ 
 }
-.boxes2 div div:hover{
-  background-color:  rgba(24, 40, 100, 0.563);
+.part3 div{
+ height: 8cm;
+margin-bottom: 0.2cm; 
+ width: max(9cm,45%);
+ 
+ 
 }
-.boxes2 p{
-  color: white;
-  width: 50%;
-  position: relative;
-  top: 35%;
-  left: 25%;
-  right: 25%;
-  text-align: center;
-  height: auto;
-  
-  border-radius: 2px;
-  padding: 0.2cm;
+.part4 div{
+ height: 8cm;
+margin-bottom: 0.2cm; 
+ width: max(9cm,30%);
+ 
+ 
 }
-.boxes2 p:hover{
-  color: black;
-  background-color: white;
+.part3 .col:hover{
+ background-color:rgba(24, 40, 100, 0.51) ;
 }
-.content5 div{
-  position: relative;
-  top: -23cm;
+.part4 .col:hover{
+ background-color:rgba(24, 40, 100, 0.51) ;
 }
-.content5 h1{
-  position: relative;
-  top: -10.5cm;
-  left: 2cm;
-  width: 5cm;
+.part1 .col img{
+ width: max(9cm,100%);
+ height: 8cm;
+
 }
-.content5 img{
-  width: 100%;
-  height: 12cm;
+.part2 .col img{
+ width: max(9cm,100%);
+ height: 8cm;
+ 
+}
+.col {
+ display: flex;
+ justify-content: center;
+ align-items: end;
+ 
+}
+.col div{
+ width: 70%;
+ padding: 0.2cm;
+ height: 10%;
+ text-align: center;
+ color: white;
+ border: none;
+ margin-bottom: 1cm;
+ box-shadow: 1px 1px 3px 0px  white;
+ border-radius: 3px;
+}
+.col div:hover{
+ background-color: white;
+ color: black;
+
+}
+.part3{
+ position: absolute;
+ text-align: end;
+
+ top: -2;
+}
+.part4{
+ position: absolute;
+ text-align: end;
+ top: -2;
+}
+.content3{
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.hoverDiv {
+
+ position: relative;
+ height: auto;
+}
+.hoverImgDiv{
+ 
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ width: 100%;
+ height: auto;
+}
+.hoverDetails{
+ 
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ width: 100%;
+ height: auto;
+ position: absolute;
+ top: 0;
+}
+
+
+.detailsDiv .details1,.details3,.details5,.details7{
+
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: rgba(24, 40, 100, 0.71);
+}
+.details2,.details4,.details6,.details8{
+ 
+ width: 100%;
+ height: 100%;
+ display: none;
+ flex-direction: column;
+ justify-content: end;
+ align-items: center;
+
+ 
+ 
+}
+.details1 p,.details3 p,.details5 p,.details7 p{
+ 
+ text-align: center;
+ width: 70%;
+ height: 0.8cm;
+ padding-top: 0.1cm;
+ color: white;
+ font-size: 24px;
+}
+
+.subdetails,.subdetails,.subdetails,.subdetails{
+ 
+ 
+ 
+ height: 2cm;
+
+ background-color: rgba(0, 0, 0, 0.364);
+ 
+ color: white;
+ width: 100%;
+ 
+}
+.details2 div div,.details4 div div,.details6 div div,.details8 div div{
+ padding-left: 0.2cm;
+ 
+}
+.hoverImg,.detailsDiv{
+ 
+ width:max(9.5cm,24.8%);
+ height: 8cm;
+
+}
+.hoverImgDiv div img{
+ width: 100%;
+ height: 100%;
+}
+
+.content5{
+ position: relative;
+ margin-top: 2cm;
+}
+
+.aboutImg h1{
+ position: absolute;
+ top: 20px;
+ left: 30px;
+}
+.aboutImg img{
+ width: 100%;
+ height: 7cm;
 }
 .content6{
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: -32cm;
-  height: 10cm;
-  margin-left:  10%;
-  margin-right: 10%;
-  width: 80%;
+ display: flex;
+ flex-wrap: wrap;
+ position: relative;
+ top: -4cm;
+ height: 10cm;
+ margin-left:  10%;
+ margin-right: 10%;
+ width: 80%;
 }
 .content6 div{
-  width: max(10cm,50%);
+ width: max(10cm,50%);
 }
-.content6 img{
-  width: 100%;
-  height: 10cm;
+.content6 div img{
+ width: 100%;
+ height: 10cm;
 }
 .div2{
-  background-color: rgb(252, 246, 246);
+ background-color: rgb(252, 246, 246);
 }
 .div2 h1{
-  margin: 1.5cm 0 1cm 1cm;
+ margin: 1.5cm 0 1cm 1cm;
 }
 .div2 p{
-  margin-left: 1cm;
-  margin-bottom: 1cm;
-  letter-spacing: 1px;
+ margin-left: 1cm;
+ margin-bottom: 1cm;
+ letter-spacing: 1px;
 }
+
 .reels{
-  
-  width: 100%;
-  
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1cm;
-  justify-content: center;
  
+ width: 100%;
  
+ display: flex;
+ flex-wrap: wrap;
+ gap: 1cm;
+ justify-content: center;
+
+
 }
 .reels div video{
-  width:9cm;
-  margin: 1.5cm 0;
+ width:9cm;
+ margin: 1.5cm 0;
 
-  height: 9cm;}
-  .overlay {
-     display: none;
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 96%;
-     padding: 1.5%;
-     height: 100%;
-     background: rgba(0, 0, 0, 0.5);
-     justify-content: center;
-     align-items: center;
-     z-index: 1;
- }
+ height: 9cm;} 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 96%;
+    padding: 1.5%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
 
- .popup-container {
-     background-color: #fff;
-     padding: 20px;
-     border-radius: 8px;
-     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-     max-width: 400px;
-     text-align: start;
- }
- .popup-container h2{
-  text-align: center;
-  
- }
- .close img{
-  width: 0.6cm;
-  height: 0.6cm;
+.popup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: start;
+}
+.popup-container h2{
+ text-align: center;
  
- }
- .head{
-  display: flex;
-  justify-content: space-between;
- }
+}
+.close img{
+ width: 0.6cm;
+ height: 0.6cm;
+
+}
+.head{
+ display: flex;
+ justify-content: space-between;
+}
 
 form input, textarea {
-     width: 100%;
-     padding: 10px;
-     margin: 8px 0;
-     box-sizing: border-box;
-     border: 1px solid #ccc;
-     border-radius: 4px;
- }
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
 form button {
-     background-color: #4caf50;
-     color: white;
-     padding: 15px 20px;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
-     font-size: 16px;
- }
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
 form  button:hover {
-     background-color: #45a049;
- }
- .whatsapp-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+    background-color: #45a049;
+}
+.whatsapp-container {
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ z-index: 1000;
+ cursor: pointer;
+ transition: transform 0.3s ease-in-out;
 }
 
 .whatsapp-icon {
-  width: 60px;
-  height: 60px;
-  background-color: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 24px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+ width: 60px;
+ height: 60px;
+ background-color: #25D366;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ font-size: 24px;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 .whatsapp-icon img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  
-  
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ border-radius: 50%;
+ 
+ 
 }
 
 .whatsapp-icon:hover {
-  transform: scale(1.1);
+ transform: scale(1.1);
 }
 
-/* Add your own animation styles here */
+
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
+ 0% { transform: scale(1); }
+ 50% { transform: scale(1.2); }
+ 100% { transform: scale(1); }
 }
 
 .whatsapp-icon.animated:hover {
-  animation: pulse 1s infinite;
+ animation: pulse 1s infinite;
 }
 .phone-container {
-  position: fixed;
+ position: fixed;
 
-  bottom: 20px;
-  left: 20px;
-  z-index: 1000;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+ bottom: 20px;
+ left: 20px;
+ z-index: 1000;
+ cursor: pointer;
+ transition: transform 0.3s ease-in-out;
 }
 
 .phone-icon {
-  width: 60px;
-  height: 60px;
-  background-color: #4285F4;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 24px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+ width: 60px;
+ height: 60px;
+ background-color: #4285F4;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ font-size: 24px;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .phone-icon:hover {
-  transform: scale(1.1);
+ transform: scale(1.1);
 }
 
-/* Add your own animation styles here */
+
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
+ 0% { transform: scale(1); }
+ 50% { transform: scale(1.2); }
+ 100% { transform: scale(1); }
 }
 
 .phone-icon.animated:hover {
-  animation: pulse 1s infinite;
+ animation: pulse 1s infinite;
 }
 
 
 
 
-@media (max-width:360px){
-  
-  .boxes2{
-     
-     top: -50.9cm;
-   }
-   .header{
-     width: 100%;
-   }
-   .arrow1{
-     left: 30%;
-     
-  }
-  .arrow2{
-    left: 40%;
-  }
-  .content5 div{
-     top: -50cm;
-  }
-  .content6{
-     top:-58cm;
-  }
-  .imgDiv img{
-     margin-left: -1.8cm;
-     height: 2.5cm;
-     
-  }
-  .sub1 div,.sub2 div{
-     
-      margin-right: 0.2cm;
-   }
-  .first{
-     display: none;
-  }
-  
-}
