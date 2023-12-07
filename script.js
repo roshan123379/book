@@ -136,3 +136,21 @@ details8.addEventListener("mouseleave",()=>{
    details8.style.display="none"
 })
 
+const ourVillas = document.querySelector(".left1")
+ourVillas.addEventListener("click", scrollTop)
+
+const book = document.querySelector(".right1")
+book.addEventListener("click",scrollTop)
+
+function scrollTop(){
+   const content2 = document.querySelector(".control")
+   content2.scrollIntoView({behavior:"smooth"})
+}
+
+const about = document.querySelector(".about")
+about.addEventListener("click", scrollUp)
+
+function scrollUp(){
+   const aboutUs = document.querySelector(".content5")
+   aboutUs.scrollIntoView({behavior:"smooth"})
+}

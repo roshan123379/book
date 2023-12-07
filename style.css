@@ -398,7 +398,7 @@ margin-bottom: 0.2cm;
  flex-wrap: wrap;
  position: relative;
  top: -4cm;
- height: 10cm;
+ height: auto;
  margin-left:  10%;
  margin-right: 10%;
  width: 80%;
@@ -578,6 +578,79 @@ form  button:hover {
  animation: pulse 1s infinite;
 }
 
+.footer{
+  height: 4.5cm;
+  padding-top: 0.4cm;
+  background-color: rgb(24, 41, 100);
+}
+.footer1{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+
+  background-color: rgb(24, 41, 100) ; 
+}
+
+.left{
+ 
+  display: flex;
+  justify-content: center;
+ 
+  width: max(5cm,49%);
+  
+  
+}
+.right{
+
+  display: flex;
+  justify-content: center;
+  width: max(5cm,49%);
+  
+  
+}
+.left div,.right div{
+  text-align: center;
+  padding: 0 0.2cm;
+  margin: 0.2cm 0;
+  
+  
+  
+}
+.left1 ,.right1{
+  border-right: 2px solid white;
+}
+.footer2{
+  align-items: center;
+  background-color: rgb(24, 41, 100);
+  width: 100%;
+  text-align: center;
+  height: 32%;
+  display: flex;
+  padding: 1% 0;
+  justify-content: center;
+  gap: 0.5cm;
+}
+.footer2 i{
+  color: white;
+}
+.footer3{
+  
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 40%;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(24, 41, 100);
+  
+}
 
 
-
+@media (max-width:412px){
+  .left,.right{
+    width: 100%;
+  }
+}
