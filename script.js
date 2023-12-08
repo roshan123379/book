@@ -174,12 +174,14 @@ const time = document.getElementById("time")
 
 const submit = document.querySelector(".submit")
 submit.addEventListener("click",()=>{
-   if(nam.value=="" && phone.value =="" && time.value=="" ){
-      return false 
-   }
-   else{
+   if(nam.value!=="" && phone.value !=="" && time.value !==""){
+    
       thanks.style.display="block"
       overlay.style.display="none"
+   }
+   else{
+      return false
+      
    }
    
 })
