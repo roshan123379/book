@@ -28,10 +28,11 @@ function togglePopup() {
    overlay.style.display="flex"
 }
 
-document.getElementById("popForm").addEventListener("submit", function() {
-   
+document.getElementById("popForm").addEventListener("submit", function(event) {
+   event.preventDefault()
   
-   togglePopup();
+   
+
 });
 let close=document.querySelector(".close")
 close.addEventListener("click" ,()=>{
