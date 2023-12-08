@@ -380,36 +380,46 @@ margin-bottom: 0.2cm;
 }
 
 .content5{
- position: relative;
- margin-top: 2cm;
+  padding-top: 1cm;
+   position: relative;
+   margin-top: 2cm;
+   background-image: url("./imgs/last1.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 5cm;
 }
 
 .aboutImg h1{
- position: absolute;
- top: 20px;
- left: 30px;
+   position: absolute;
+   top: 20px;
+   left: 30px;
 }
 .aboutImg img{
- width: 100%;
- height: 7cm;
+   width: 100%;
+   height: 7cm;
 }
 .content6{
- display: flex;
- flex-wrap: wrap;
- position: relative;
- top: -4cm;
- height: auto;
- margin-left:  10%;
- margin-right: 10%;
- width: 80%;
-}
-.content6 div{
- width: max(10cm,50%);
-}
-.content6 div img{
- width: 100%;
- height: 10cm;
-}
+   
+   
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+  
+
+   height: auto;
+   margin-left:  10%;
+   margin-right: 10%;
+   margin-top: 2cm;
+   margin-bottom: 1cm;
+   width: 80%;
+ }
+ .content6 div{
+   width: max(10cm,50%);
+ }
+ .content6 div img{
+   width: 100%;
+   height: 100%;
+ }
+
 .div2{
  background-color: rgb(252, 246, 246);
 }
@@ -648,7 +658,45 @@ form  button:hover {
   
 }
 
-
+.main{
+  position: relative;
+}
+.thankBlur{
+  
+  width: 100%;
+  height: 100vh;
+  background-image: url("./imgs/photo4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+}
+.thank{
+  color: rgb(254, 9, 9);
+}
+.successIcon i{
+  color: rgb(90, 211, 90);
+  font-size: 100px;
+}
+.thankPage{
+  position: absolute;
+  top: 0 ;
+  background-color: rgba(24, 40, 100, 0.832) ;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.thankPage p{
+  margin-bottom: 1cm;
+  font-size: 20px;
+  color: white;
+}
+.thankPage h1{
+  font-size: 50px;
+}
 @media (max-width:412px){
   .left,.right{
     width: 100%;

@@ -21,8 +21,10 @@ flag = flag + n
 slideShow(flag)
 } 
 
+const overlay = document.getElementById('overlay');
+
 function togglePopup() {
-   const overlay = document.getElementById('overlay');
+   
    overlay.style.display="flex"
 }
 
@@ -139,18 +141,26 @@ details8.addEventListener("mouseleave",()=>{
 const ourVillas = document.querySelector(".left1")
 ourVillas.addEventListener("click", scrollTop)
 
-const book = document.querySelector(".right1")
-book.addEventListener("click",scrollTop)
+
 
 function scrollTop(){
-   const content2 = document.querySelector(".control")
+   const content2 = document.querySelector("body")
    content2.scrollIntoView({behavior:"smooth"})
 }
 
-const about = document.querySelector(".about")
-about.addEventListener("click", scrollUp)
 
-function scrollUp(){
-   const aboutUs = document.querySelector(".content5")
-   aboutUs.scrollIntoView({behavior:"smooth"})
-}
+
+const term = document.querySelector(".term")
+term.addEventListener("click",()=>{
+   location.href="https://www.skywatervillas.com/Terms%20And%20Conditions.html"
+})
+
+const abouts = document.querySelector(".about")
+abouts.addEventListener("click",()=>{
+   location.href="https://skywatervillas.com/about-igatpuri-resort-villas.html"
+})
+
+const book = document.querySelector(".right1")
+book.addEventListener("click",()=>{
+   overlay.style.display="flex"
+})
