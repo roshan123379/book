@@ -165,3 +165,25 @@ book.addEventListener("click",()=>{
    overlay.style.display="flex"
 })
 
+const thanks = document.querySelector(".content7")
+
+const nam = document.getElementById("name")
+const phone = document.getElementById("phone")
+const time = document.getElementById("time")
+
+const submit = document.querySelector(".submit")
+submit.addEventListener("click",()=>{
+   if(nam.value=="" && phone.value =="" && time.value=="" ){
+      return false 
+   }
+   else{
+      thanks.style.display="block"
+      overlay.style.display="none"
+   }
+   
+})
+const back = document.querySelector(".back")
+back.addEventListener("click",()=>{
+   
+   thanks.style.display="none"
+})
