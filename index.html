@@ -321,8 +321,13 @@
             <input type="tel" id="phone" name="PHONE" pattern="[0-9]{10}" required
               title="Please enter a 10-digit phone number">
 
-            <label for="time">Check-in Time:</label>
-            <input type="date" name="MMERGE3" id="time" required>
+            
+          <label for="mce-MMERGE3-month">Check-in Time </label>
+          <input class="datepart " type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="MMERGE3[day]" id="mce-MMERGE3-day" value="">
+          <input class="datepart " type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="MMERGE3[month]" id="mce-MMERGE3-month" value="">
+          <input class="datepart " type="text" pattern="[0-9]*" placeholder="YYYY" size="4" maxlength="4" name="MMERGE3[year]" id="mce-MMERGE3-year" value="">
+        
+
 
            
 
