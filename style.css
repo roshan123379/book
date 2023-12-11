@@ -665,7 +665,7 @@ form  button:hover {
   height: 100vh;
   
 }
-.back{
+#back{
   color: white;
    border-bottom: 1px solid white;
    text-align: center;
