@@ -171,10 +171,12 @@ const thanks = document.querySelector(".content7")
 const nam = document.getElementById("name")
 const phone = document.getElementById("phone")
 const time = document.getElementById("time")
+const email = document.getElementById("email")
+
 
 const submit = document.querySelector(".submit")
 submit.addEventListener("click",()=>{
-      if(nam.value!=="" && phone.value !=="" && time.value !==""){
+      if(nam.value!=="" && phone.value !=="" && time.value !=="" && email.value !== ""){
     
          location.href="thanks.html"
     }
