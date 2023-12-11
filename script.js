@@ -172,21 +172,24 @@ const nam = document.getElementById("name")
 const phone = document.getElementById("phone")
 const time = document.getElementById("time")
 
-const submit = document.querySelector(".submit")
-submit.addEventListener("click",()=>{
-   if(nam.value!=="" && phone.value !=="" && time.value !==""){
+// const submit = document.querySelector(".submit")
+// submit.addEventListener("click",()=>{
+//    if(nam.value!=="" && phone.value !=="" && time.value !==""){
     
-      thanks.style.display="block"
-      overlay.style.display="none"
-   }
-   else{
-      return false
       
-   }
+//    }
+//    else{
+//       return false
+      
+//    }
    
-})
-const back = document.querySelector(".back")
-back.addEventListener("click",()=>{
+// })
+// const back = document.querySelector(".back")
+// back.addEventListener("click",()=>{
    
-   thanks.style.display="none"
+//    thanks.style.display="none"
+// })
+const submit = document.querySelector(".p")
+submit.addEventListener("click",()=>{
+   location.href="thanks.html"
 })
