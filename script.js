@@ -1,5 +1,6 @@
 let flag =0
 slideShow(flag)
+
 function slideShow(num){
 let slides = document.getElementsByClassName("slider")
 
@@ -14,7 +15,9 @@ if(num<0){
    flag = slides.length-1;
    num=slides.length-1;
 }
+
 slides[num].style.display="block"
+
 }
 function controll(n){
 flag = flag + n
@@ -23,25 +26,21 @@ slideShow(flag)
 
 const overlay = document.getElementById('overlay');
 
-function togglePopup() {
+function togglePopup(){
    
    overlay.style.display="flex"
 }
 
-document.getElementById("popForm").addEventListener("submit", function(event) {
-   event.preventDefault()
-  
-   
 
-});
-let close=document.querySelector(".close")
-close.addEventListener("click" ,()=>{
+document.querySelector(".close").addEventListener("click",()=>{
    overlay.style.display="none"
 })
 
-let col1 = document.querySelector("#col1")
+
+const col1 = document.querySelector("#col1")
 
 col1.addEventListener("mouseenter",()=>{
+   
    col1.style.alignItems="center"
 })
 col1.addEventListener("mouseleave",()=>{
@@ -166,26 +165,10 @@ book.addEventListener("click",()=>{
    overlay.style.display="flex"
 })
 
-const thanks = document.querySelector(".content7")
 
-const nam = document.getElementById("name")
-const phone = document.getElementById("phone")
-
-const email = document.getElementById("email")
-
-
-const submit = document.querySelector(".submit")
-submit.addEventListener("click",()=>{
-      if(nam.value!=="" && phone.value !==""  && email.value !== ""){
-    
-         location.href="thanks.html"
-    }
-     else{
-      return false
-      
- }
+  
    
-})
-function back(){
-   location.href="index.html"
-}
+  function back(){
+     location.href="index.html"
+  }
+

@@ -30,7 +30,7 @@
       </div>
     </div>
    </a>
-
+  
    
 
     <div class="containe">
@@ -309,33 +309,26 @@
                 src="https://4.bp.blogspot.com/-_hPtN6OSUlI/UofVgda6szI/AAAAAAAAGSM/hx7TmrmEc98/s1600/1-01.jpg" alt="">
             </div>
           </div>
-          <form action="https://gmail.us13.list-manage.com/subscribe/post?u=1e4e5cfc8b33ac29a8270839e&amp;id=a413b3d0dd&amp;f_id=00ddf0e7f0" method="post" id="popForm">
-            <label for="mce-FNAME">Name:</label>
-            <input type="text" id="name" name="FNAME" required>
+          <form action="" method="post" id="popForm">
+            <label for="nam">Name:</label>
+            <input type="text" id="nam" name="nam" required>
 
-            <label for="mce-EMAIL">Email Id:</label>
-            <input type="email" id="email" name="EMAIL"   required>
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"  required>
 
 
-            <label for="mce-PHONE">Phone Number:</label>
-            <input type="tel" id="phone" name="PHONE" pattern="[0-9]{10}" required
-              title="Please enter a 10-digit phone number">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required
+              title="Please enter a 10-digit phone number"> 
 
-            <!-- <label for="time">Check-in Time:</label>
-            <input type="date" name="MMERGE3" id="time" required>  -->
+            <label for="time">Check-in Time:</label>
+            <input type="date" name="time" id="time" required>  
 
-          <!-- <label for="mce-MMERGE3-month">Check-in Time </label>
-          <input class="datepart " type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="MMERGE3[day]" id="mce-MMERGE3-day" value="">
-          <input class="datepart " type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="MMERGE3[month]" id="mce-MMERGE3-month" value="">
-          <input class="datepart " type="text" pattern="[0-9]*" placeholder="YYYY" size="4" maxlength="4" name="MMERGE3[year]" id="mce-MMERGE3-year" value=""> -->
-        
-          <!-- pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" -->
-
-           
-
-            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="submit" value="Subscribe">Submit</button>
+          
+            <button type="submit" name="submit" class="submit">Submit</button>
             
-          </form>
+           </form> 
+           
 
         </div>
       </div>
@@ -343,17 +336,7 @@
 
     </div>
 
-  </div>
-
-  
-
-  
-
-
-
-
-
-
+  </div> 
 
 
   <div class="hoverDiv">
@@ -435,7 +418,7 @@
   <div class="content4">
     <div class="hover">
       <div class="part3">
-        <div class="col" id="col1">
+        <div class="col" id="col1" >
           <div>VILLAS FOR PICNIC IN IGATPURI</div>
         </div>
         <div class="col" id="col2">
@@ -527,16 +510,68 @@
       <span><a href="https://www.youtube.com/channel/UClWCtiHPo2ulcFeCdZy5eRw"><i class="fa-brands fa-youtube"></i></a></span>
       <span><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></span></div>
     <div class="footer3"><p>Copyright © 2023 Sky Water Villas | Design by Shout Marketing</p></div>
-  </div>
+  </div> 
 
+   
+
+
+
+ <script type="module">
+   
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
   
 
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAt9ZbGEzZFoF_Pp0N5qrxM1GPorLkizpo",
+    authDomain: "contactform-3393f.firebaseapp.com",
+    databaseURL: "https://contactform-3393f-default-rtdb.firebaseio.com",
+    projectId: "contactform-3393f",
+    storageBucket: "contactform-3393f.appspot.com",
+    messagingSenderId: "712587156613",
+    appId: "1:712587156613:web:20ffb4a2124b15c4281dec"
+  };
 
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
 
+  import {getDatabase ,set,ref, get,child, update, remove, push , increment} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
-  <script src="script.js"></script>
-  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  const db  = getDatabase(app)
+
+  function insertData(event){
+    event.preventDefault()
+
+   const nam = document.getElementById("nam").value
+   const phone = document.getElementById("phone").value
+   
+   const email = document.getElementById("email").value
+   const time = document.getElementById("time").value
+
+   push(ref(db,'users'),{
+      nam:nam,
+      phone:phone,
+      email:email,
+      time:time
+   })
+   .then(()=>{
+      
+      
+      location.href="thanks.html"
+     
+   })
+   .catch((error)=>{
+     console.log("error")
+   })
+  }
+  
+  document.getElementById("popForm").addEventListener("submit", insertData) 
+   
+      
+   
+ </script>
+
+  <script src="script.js"> </script>
 </body>
 
 </html>
